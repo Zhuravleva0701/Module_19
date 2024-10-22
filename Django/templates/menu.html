@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Title{% endblock %}</title>
+</head>
+<body>
+    {% block pagename %}
+    {% endblock %}
+
+    {% block menu %}
+        <a href="http://127.0.0.1:8000/"><button>Главная</button></a><br/>
+    <br/>
+        <a href="http://127.0.0.1:8000/catalog/"><button>Магазин</button></a><br/>
+    <br/>
+        <a href="http://127.0.0.1:8000/cart/"><button>Корзина</button></a>
+    <br/>
+        <a href="http://127.0.0.1:8000/sign_up/"><button>Регистрация</button></a>
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+</body>
+</html>ml>
